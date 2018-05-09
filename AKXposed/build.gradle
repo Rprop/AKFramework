@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compileOnly files('src/main/lib/XposedHiddenApi.jar')
+    compileOnly files('src/main/lib/andhook-lib-3.5.8.jar')
+    implementation files('src/main/libs/XposedExternal.jar')
+}

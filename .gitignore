@@ -1,3 +1,22 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+*/.externalNativeBuild/
+gradlew
+gradlew.bat
+.idea/*
+
+# Intellij
+*.iml
+*/*.iml
+
+#gradle wrapper
+gradle/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
 # Prerequisites
 *.d
 
@@ -12,7 +31,6 @@
 *.pch
 
 # Compiled Dynamic libraries
-*.so
 *.dylib
 *.dll
 
